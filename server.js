@@ -15,6 +15,7 @@ const CORSANYWHERE_WHITELIST = [
   "http://localhost:3000",
   "http://localhost:3001",
 ];
+var originWhitelist = parseEnvList(CORSANYWHERE_WHITELIST);
 
 function parseEnvList(env) {
   if (!env) {
