@@ -12,7 +12,8 @@ var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 // var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 const CORSANYWHERE_WHITELIST = [
   "https://oppscore-image-generator-parkerhill.vercel.app/",
-  "localhost",
+  "http://localhost:3000",
+  "http://localhost:3001",
 ];
 
 function parseEnvList(env) {
